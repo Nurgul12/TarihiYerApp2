@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="440dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/tarih_harita"/>
+
+
+    <EditText
+        android:id="@+id/EditTextAd"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Tarihi Yer Adını Giriniz." />
+
+    <EditText
+        android:id="@+id/EditTextİlAd"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/EditTextAd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Tarihi Yerin Bulunduğu İl Adını Giriniz."
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/EditTextTarihce"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/EditTextİlAd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Tarihçe Giriniz."
+        android:padding="10dp" />
+
+
+
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_below="@id/EditTextTarihce"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonKaydet"
+        android:layout_marginTop="10dp"
+        android:text="Görüntüle"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGoster"
+        android:layout_marginTop="10dp"
+        android:text="Tüm kayıtları Sil"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
